@@ -11,7 +11,7 @@ Environment variables:
     LOG_LEVEL: Logging level (default: INFO)
 
 Usage:
-    python optimized_mlflow_server.py
+    python mlflow_server.py
 """
 
 import json

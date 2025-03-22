@@ -5,7 +5,7 @@ This script creates an agent-based client that connects to the MLflow MCP server
 and processes a single natural language query.
 
 Usage:
-    python enhanced_mlflow_client.py "What models do I have registered in MLflow?"
+    python mlflow_client.py "What models do I have registered in MLflow?"
 
 Environment variables:
     OPENAI_API_KEY: Your OpenAI API key

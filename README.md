@@ -1,4 +1,4 @@
-# MLflow MCP Agent: Natural Language Interface for MLflow
+# MLflow MCP Server: Natural Language Interface for MLflow
 
 This project provides a natural language interface to MLflow via the Model Context Protocol (MCP). It allows you to query your MLflow tracking server using plain English, making it easier to manage and explore your machine learning experiments and models.
 
@@ -27,8 +27,8 @@ MLflow MCP Agent consists of two main components:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/iRahulPandey/mlflowAgent.git
-   cd mlflowAgent
+   git clone https://github.com/iRahulPandey/mlflowMCPServer.git
+   cd mlflowMCPServer
    ```
 
 2. Create a virtual environment:
@@ -89,9 +89,7 @@ You can customize the behavior using environment variables:
 - `MLFLOW_SERVER_SCRIPT`: Path to the MLflow MCP server script (default: `mlflow_server.py`)
 - `LOG_LEVEL`: Logging level (default: `INFO`)
 
-## Architecture
-
-### MLflow MCP Server (`mlflow_server.py`)
+## MLflow MCP Server (`mlflow_server.py`)
 
 The server connects to your MLflow tracking server and exposes the following tools via MCP:
 
