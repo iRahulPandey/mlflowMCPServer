@@ -112,10 +112,6 @@ The server connects to your MLflow tracking server and exposes the following too
 - Add visualization capabilities for metrics and parameters
 - Support for more MLflow operations like run management and artifact handling
 
-## License
-
-[MIT License](LICENSE)
-
 ## Acknowledgments
 
 - [Model Context Protocol (MCP)](https://github.com/anthropics/model-context-protocol): For the protocol specification
