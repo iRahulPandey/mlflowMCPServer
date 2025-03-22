@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "mlflowagent"
+version = "0.1.0"
+description = "MCP server for mlflow"
+authors = ["Rahul Pandey <rpandey1901@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mlflow = "^2.21.0"
+scikit-learn = "^1.6.1"
+pandas = "^2.2.3"
+catboost = "^1.2.7"
+requests = "^2.32.3"
+langchain = "^0.3.21"
+langchain-mcp-adapters = "^0.0.5"
+langgraph = "^0.3.18"
+langchain-openai = "^0.3.9"
+rich = "^13.9.4"
+prompt-toolkit = "^3.0.50"
+tabulate = "^0.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

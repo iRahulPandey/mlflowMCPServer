@@ -1,0 +1,8 @@
+model_examples/iris.ipynb
+mlruns
+mlartifacts
+poetry.lock
+.env
+temp
+.vscode
+model_examples
