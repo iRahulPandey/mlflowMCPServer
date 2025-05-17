@@ -1,5 +1,7 @@
 # MLflow MCP Server: Natural Language Interface for MLflow
 
+[![smithery badge](https://smithery.ai/badge/@iRahulPandey/mlflowMCPServer)](https://smithery.ai/server/@iRahulPandey/mlflowMCPServer)
+
 This project provides a natural language interface to MLflow via the Model Context Protocol (MCP). It allows you to query your MLflow tracking server using plain English, making it easier to manage and explore your machine learning experiments and models.
 
 ## Overview
@@ -25,6 +27,15 @@ MLflow MCP Agent consists of two main components:
 
 ## Installation
 
+### Installing via Smithery
+
+To install MLflow Natural Language Interface Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@iRahulPandey/mlflowMCPServer):
+
+```bash
+npx -y @smithery/cli install @iRahulPandey/mlflowMCPServer --client claude
+```
+
+### Manual Installation
 1. Clone this repository:
    ```bash
    git clone https://github.com/iRahulPandey/mlflowMCPServer.git
