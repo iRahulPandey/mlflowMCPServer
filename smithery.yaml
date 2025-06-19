@@ -1,0 +1,23 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({command: 'python', args: ['mlflow_server.py'], env: { ...(config.trackingUri ? { MLFLOW_TRACKING_URI: config.trackingUri } : {}), ...(config.logLevel ? { LOG_LEVEL: config.logLevel } : {}) }})
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    properties:
+      trackingUri:
+        type: string
+        default: http://localhost:8080
+        description: URI of the MLflow tracking server
+      logLevel:
+        type: string
+        default: INFO
+        description: Logging level
+  exampleConfig:
+    trackingUri: http://localhost:8080
+    logLevel: INFO
